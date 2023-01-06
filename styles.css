@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    display: block;
+}
+section{
+    margin: 10% 0;
+    padding: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.block{
+    max-width: 100%;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+.SkillsBlock{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.Side{
+    width: 48%;
+    padding: 10px;
+}
+.subTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.left-side p{
+    text-align: justify;
+    text-indent: 5ch;
+}
+
+.right-side .SkillBox {
+    margin-bottom: 10px;
+}
+.right-side .Skill{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-side span{
+    font-weight: 500;
+    font-size: 18px;
+    user-select: none;
+}
+
+.SkillBar{
+    height: 10px;
+    width: 100%;
+    background: #d3d3d3;
+    position: relative;
+    border-radius: 50px;
+}
+.SkillBar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000;
+    animation: loading 3s linear forwards;
+    border-radius: 50px;
+}
+@keyframes loading {
+    0%{
+        width: 0;
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.html::before{
+    width: 90%;
+}
+.css::before{
+    width: 75%;
+}
+.Javascript::before{
+    width: 60%;
+}
+.ReactJs::before{
+    width: 50%;
+}
+.jQuery::before{
+    width: 40%;
+}
